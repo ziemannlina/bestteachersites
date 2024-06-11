@@ -1,4 +1,4 @@
-<ifModule
+
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} .
