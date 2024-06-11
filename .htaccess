@@ -1,6 +1,7 @@
-# 301 редиректи
-Redirect 301 /index.html https://bestteachersites.com/
-
 # Редирект з www на без www
+RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.bestteachersites.com$ [NC]
 RewriteRule ^(.*)$ https://bestteachersites.com/$1 [R=301,L]
+
+# 301 редиректи
+Redirect 301 /index.html https://bestteachersites.com/
