@@ -1,7 +1,11 @@
 # Редирект з www на без www
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.bestteachersites.com$ [NC]
-RewriteRule ^(.*)$ https://bestteachersites.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/
+RewriteRule ^(.*)index\.(php|html|htm)$ $1 [R=301,L]
 
 # 301 редиректи
 Redirect 301 /index.html https://bestteachersites.com/
