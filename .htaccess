@@ -1,2 +1,2 @@
-RewriteCond %{HTTP_HOST} ^www.vashdomen.com$ [NC]
-RewriteRule ^(.*)$ http://vashdomen.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.bestteachersites.com$ [NC]
+RewriteRule ^(.*)$ https://bestteachersites.com/$1 [R=301,L]
